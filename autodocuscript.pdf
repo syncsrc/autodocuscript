@@ -1,0 +1,76 @@
+${0+: \} <#}
+! read -d ^Y^Y String <<"SCRIPTSTART"
+%PDF-1.5
+%0x25D0D4C5D8
+
+9999 0 obj
+<</Length 295>>
+stream
+SCRIPTSTART
+############# INSERT BASH SCRIPT HERE ############
+echo "Unix: Bourne-Shell"
+exit 0
+############# END OF BASH SCRIPT #################
+#>
+############# INSERT POWERSHELL SCRIPT HERE ######
+Write-Host "Windows: Powershell"
+return
+############# END OF POWERSHELL SCRIPT ###########
+<#
+endstream
+endobj
+
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [ 3 0 R ] >>
+endobj
+
+3 0 obj
+<< /Type /Page /Contents 4 0 R /Parent 2 0 R /Resources
+    << /Font
+        << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Arial >>
+           /F2 << /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+	    >>
+    >>
+>>
+endobj
+
+4 0 obj
+<</Length 1877>>
+stream
+BT /F1 12 Tf 0.0 g 50 720 Td (This PDF doubles as valid bash and powershell scripts. Usage instructions:)Tj ET
+BT /F1 16 Tf 0.0 g 50 670 Td (Windows)Tj ET
+BT /F1 12 Tf 0.0 g 50 650 Td (Open a cmd shell and create a link with the powershell file extension)Tj ET
+BT /F2 12 Tf 0.2 g 70 630 Td (> mklink /D /H autodocuscript.ps1 autodocuscript.pdf)Tj ET
+BT /F1 12 Tf 0.0 g 50 610 Td (Then run the script in powershell)Tj ET
+BT /F2 12 Tf 0.2 g 70 590 Td (> powershell -ExecutionPolicy ByPass -File autodocuscript.ps1)Tj ET
+BT /F1 16 Tf 0.0 g 50 540 Td (Linux)Tj ET
+BT /F1 12 Tf 0.0 g 50 520 Td (Open a shell and run the following command)Tj ET
+BT /F2 12 Tf 0.2 g 70 500 Td ($ bash ./autodocuscript.pdf)Tj ET
+BT /F1 16 Tf 0.0 g 50 450 Td (Editing)Tj ET
+BT /F1 12 Tf 0.0 g 50 430 Td (Open this file in a text editor, and insert the desired bash and powershell scripts in the marked)Tj ET
+BT /F1 12 Tf 0.0 g 50 415 Td (locations. Once that's done, several pointers will need to be fixed up.)Tj ET
+BT /F1 12 Tf 0.0 g 50 400 Td (The offsets in the xref table will need to be adjusted to point to the new object locations.)Tj ET
+BT /F1 12 Tf 0.0 g 50 385 Td (The following command will show the offsets to use.)Tj ET
+BT /F2 12 Tf 0.2 g 70 365 Td ($ grep --byte-offset "^. 0 obj\\|^xref" autodocuscript.pdf)Tj ET
+BT /F1 12 Tf 0.0 g 50 345 Td (The length value for the 9999 object containing the shell scripts will also need to be updated.)Tj ET
+BT /F1 12 Tf 0.0 g 50 330 Td (If the scripts have been added between the comments, the new length value should be the offset)Tj ET
+BT /F1 12 Tf 0.0 g 50 315 Td (of the "1 0" object, from the previous command, minus 127)Tj ET
+endstream
+endobj
+
+xref
+0 5
+0000000000 65535 f
+0000000422 00000 n
+0000000472 00000 n
+0000000532 00000 n
+0000000769 00000 n
+trailer << /Size 5 /Root 1 0 R >>
+startxref
+2477
+%%EOF
+%#>
