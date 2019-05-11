@@ -1,5 +1,5 @@
 # autodocuscript
-A self-documenting bash and powershell script.
+A self-documenting multi-platform script.
 
 autodocuscript is a polygot PDF that contains executable bash and powershell scripts, to enable providing truly self-documenting scripting capabilities in both Windows and Linux environments.
 
