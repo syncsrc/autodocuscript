@@ -8,6 +8,8 @@ Open the PDF for usage and editing instructions.
 # Issues
 There doesn't appear to be a way to get powershell to execute scripts with arbitrary extensions.
 
+The string "#>" must not appear in any of the PDF objects following the powershell script.
+
 # References
 1. https://stackoverflow.com/questions/25447555/simple-cross-platform-os-based-startup-routing-script
 2. https://github.com/corkami/pocs
